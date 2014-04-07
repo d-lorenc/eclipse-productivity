@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="singleton implementation using instance holder" enabled="true" name="singleton">private static class InstanceHolder {
+    private static final ${enclosing_type} INSTANCE = new ${enclosing_type}(); 
+}
+    
+public static ${enclosing_type} getInstance() {
+    return InstanceHolder.INSTANCE;
+}
+    
+private ${enclosing_type}() {
+}</template></templates>

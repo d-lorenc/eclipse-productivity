@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="Anotated mockito captor" enabled="true" name="captor">${:import(org.mockito.Captor, org.mockito.ArgumentCaptor)}
+@Captor
+private ArgumentCaptor&lt;${Type}&gt; ${name}Captor;</template><template autoinsert="true" context="java-members" deleted="false" description="Annotated mockito mock" enabled="true" name="mock">${:import(org.mockito.Mock, org.mockito.runners.MockitoJUnitRunner)}
+@Mock
+private ${MockType} ${mock};
+</template><template autoinsert="true" context="java" deleted="false" description="Mockito JUnit Runner" enabled="true" name="runWithMockito">${:import(org.junit.runner.RunWith, org.mockito.runners.MockitoJUnitRunner)}
+@RunWith(MockitoJUnitRunner.class)</template></templates>

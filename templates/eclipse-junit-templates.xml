@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java-members" deleted="false" description="JUnit tear down method" enabled="true" name="after">${:import(org.junit.After)}
+@After
+public void after() throws Exception {
+	${cursor}
+}</template><template autoinsert="true" context="java-members" deleted="false" description="JUnit tear down class method" enabled="true" name="afterClass">${:import(org.junit.AfterClass)}
+@AfterClass
+public static void afterClass() throws Exception {
+	${cursor}
+}</template><template autoinsert="true" context="java-members" deleted="false" description="JUnit set up method" enabled="true" name="before">${:import(org.junit.Before)}
+@Before
+public void before() throws Exception {
+	${cursor}
+}</template><template autoinsert="true" context="java-members" deleted="false" description="JUnite set up class method" enabled="true" name="beforeClass">${:import(org.junit.BeforeClass)}
+@BeforeClass
+public static void beforeClass() throws Exception {
+	${cursor}
+}</template><template autoinsert="true" context="java" deleted="false" description="JUnit Rule for ExpectedException" enabled="true" name="expectedException">${:import(org.junit.Rule, org.junit.rules.ExpectedException)}
+@Rule
+public ExpectedException expectedException = ExpectedException.none();
+</template><template autoinsert="false" context="java-members" deleted="false" description="test method" enabled="true" id="org.eclipse.jdt.ui.templates.test" name="test">@${testType:newType(org.junit.Test)}
+public void should${DoSomething}() throws Exception {
+	${cursor}
+}</template></templates>
