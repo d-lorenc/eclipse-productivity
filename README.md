@@ -1,2 +1,2 @@
-eclipse-productivity
+lightning-eclipse
 ====================
